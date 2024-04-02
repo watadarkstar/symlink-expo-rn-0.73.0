@@ -1,6 +1,27 @@
 {
+  // Test
   "extends": "expo/tsconfig.base",
+  "exclude": ["./dist"],
   "compilerOptions": {
-    "strict": true
+    "noImplicitAny": true,
+    "strict": true,
+    "baseUrl": ".",
+    "allowJs": false,
+    "module": "esnext",
+    "paths": {
+      "*": ["./"],
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@constants/*": ["constants/*"],
+      "@context/*": ["context/*"],
+      "@helpers/*": ["helpers/*"],
+      "@hooks/*": ["hooks/*"],
+      "@machines/*": ["machines/*"],
+      "@navigation/*": ["navigation/*"],
+      "@packageTypes/*": ["types/*"],
+      "@screens/*": ["screens/*"],
+      "@utils/*": ["utils/*"],
+      "@services/*": ["services/*"]
+    }
   }
 }

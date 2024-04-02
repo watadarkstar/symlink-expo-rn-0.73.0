@@ -28,6 +28,11 @@ yarn-error.*
 .DS_Store
 *.pem
 
+# macOS
+ios
+.DS_Store
+.env
+
 # local env files
 .env*.local
 
